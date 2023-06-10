@@ -1,0 +1,123 @@
+Date Functions:
+***************
+
+GETDATE(): Returns the current system date and time.
+
+DATEADD(): Adds or subtracts a specified interval (such as days, months, years, etc.) to a given date. The syntax is DATEADD(interval, number, date).
+
+DATEDIFF(): Calculates the difference between two dates, specified as two arguments. The syntax is DATEDIFF(interval, start_date, end_date).
+
+DATEPART(): Returns a specified part of a date, such as the day, month, or year. The syntax is DATEPART(datepart, date).
+
+CONVERT(): Converts a given value to a specified data type, such as converting a date to a different format. The syntax is CONVERT(datatype, expression, style)
+
+
+RDD Functions:
+**************
+
+1. RDD (Resilient Distributed Datasets) API: RDD is the fundamental data structure in Spark. It represents an immutable distributed collection of objects that can be processed in parallel. The RDD API provides operations like map, filter, reduce, and join for manipulating and transforming data.
+
+2. DataFrame API: DataFrame API is a distributed collection of data organized into named columns. It provides a higher-level abstraction compared to RDD and allows you to perform SQL-like operations such as filtering, aggregation, and window functions. The DataFrame API is more optimized for structured and semi-structured data.
+
+3. Dataset API: The Dataset API combines the benefits of RDD and DataFrame APIs. It provides a strongly-typed, object-oriented programming interface and supports both static typing and the benefits of optimized execution plans. It allows you to work with structured and unstructured data in a type-safe manner.
+
+4. Spark SQL API: Spark SQL is a module in Spark that provides a programming interface for working with structured data using SQL queries. It allows you to execute SQL queries directly on DataFrames and Datasets. Spark SQL also integrates with Hive to provide compatibility with existing Hive deployments.
+
+5. Streaming API: Spark Streaming is a scalable, fault-tolerant streaming processing framework built on top of Spark. The Streaming API allows you to process live data streams in real-time using high-level operations such as windowing, sliding, and aggregations. It enables the processing of data in mini-batches, providing low-latency and fault-tolerant processing capabilities.
+
+Pandas Functions:
+*****************
+
+1. pd.DataFrame(): The pd.DataFrame() function is used to create a DataFrame, which is a 2-dimensional tabular data structure in pandas. It can be created from various data sources like lists, dictionaries, NumPy arrays, or CSV files.
+
+2. df.head(): The head() method is used to return the first n rows of a DataFrame. By default, it returns the first 5 rows.
+
+3. df.describe(): The describe() method generates descriptive statistics of the numerical columns in a DataFrame. It provides information such as count, mean, standard deviation, minimum, maximum, and quartiles.
+
+4. df.groupby(): The groupby() method is used to group rows of a DataFrame based on one or more columns. It allows you to perform operations on grouped data, such as aggregation, transformation, or filtering.
+
+5. df.sort_values(): The sort_values() method is used to sort a DataFrame by one or more columns. It allows you to specify ascending or descending order for each column.
+
+Spark Functions:
+*****************
+
+1. select(): Selects specific columns from a DataFrame.
+ 
+
+2. filter(): Filters rows based on a condition.
+  
+
+3. groupBy(): Groups the DataFrame by one or more columns.
+   
+
+4. agg(): Performs aggregate functions on grouped data.
+
+
+5. distinct(): Returns distinct rows from a DataFrame.
+  
+numpy Functions:
+****************
+1. np.array(): The np.array() function is used to create a NumPy array from a Python list or tuple. It converts the input data into an ndarray object, which is the core data structure in NumPy for performing mathematical operations efficiently.
+
+2. np.arange(): The np.arange() function returns an array with evenly spaced values within a specified range. It is similar to the Python range() function but returns a NumPy array.
+
+3. np.reshape(): The np.reshape() function is used to change the shape of an array without changing its data. It returns a new view of the array with the desired shape.
+
+4. np.mean(): The np.mean() function computes the arithmetic mean along a specified axis or the whole array. It calculates the average of the elements in the array.
+
+5. np.max(): The np.max() function returns the maximum value from an array along a specified axis or the whole array.
+
+
+String Functions:
+*****************
+
+1.length() - Returns the length of a string.
+
+2.concat() - Concatenates two or more strings together.
+
+3.substring() - Extracts a substring from a string.
+
+4.lower() - Converts a string to lowercase.
+
+5.upper() - Converts a string to uppercase.
+
+6.trim() - Removes leading and trailing spaces from a string.
+
+
+Spark Session functions:
+************************
+
+1.spark: This function is used to create a new SparkSession or retrieve an existing one. It is typically used as the starting point for any Spark application.
+
+
+2.read: This function is used to read data from various data sources and create a DataFrame or Dataset.
+
+
+3.write: This function is used to write the content of a DataFrame or Dataset to an external data sink.
+
+
+4.sql: This function allows you to execute SQL queries on a DataFrame or Dataset by registering it as a temporary table or view.
+
+
+5.range: This function generates a DataFrame with a single column that contains a range of integers.
+
+Int Functions:
+**************
+
+1.abs(): Returns the absolute value of an integer.
+
+
+2.floor(): Returns the largest integer less than or equal to a given number.
+
+
+3.ceil(): Returns the smallest integer greater than or equal to a given number.
+
+
+4.round(): Rounds a number to the nearest integer.
+
+
+5.max(): Returns the maximum value among two or more integers.
+
+
+6.min(): Returns the minimum value among two or more integers.
+
