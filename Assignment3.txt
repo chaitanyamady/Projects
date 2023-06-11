@@ -1,3 +1,6 @@
+Owner: Chaitanya M
+
+
 CREATE TABLE Employees09 (employee_id INT, employee_name VARCHAR(50),manager_id INT);
 
 INSERT INTO Employees09 (employee_id, employee_name, manager_id)
