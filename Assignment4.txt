@@ -1,3 +1,4 @@
+Owner: Chaitanya M
 CREATE TABLE CUSTOMERS2(
   CUSTOMER_ID INT,
   Date1 VARCHAR(6)  
